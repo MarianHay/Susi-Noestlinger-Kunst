@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Susi Nöstlinger – Arbeiten</title>
+  <meta name="description" content="Ausgewählte Arbeiten von Susi Nöstlinger">
+  <meta property="og:title" content="Susi Nöstlinger – Arbeiten">
+  <meta property="og:image" content="medien/fetzenschaedel-01.jpg">
+  <style>
+:root{--text:#1a1a1a;--muted:#7a7a7a;--line:#e7e5e1;--bg:#fbfaf8;--ph:#eceae6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.serif{font-family:Georgia,"Times New Roman",serif;font-weight:normal}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+img{display:block;width:100%;height:auto;background:var(--ph)}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 20px;font-size:.92rem}
+dt{color:var(--muted)}
+.untertitel{font-style:italic;color:var(--muted);font-size:1.05rem}
+.version{font-size:.85rem;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.version:hover{color:var(--text)}
+footer{border-top:1px solid var(--line);padding:40px 0 60px;color:var(--muted);font-size:.88rem;margin-top:40px}
+.ueber{display:grid;grid-template-columns:minmax(0,260px) 1fr;gap:32px;align-items:start;padding:56px 0;border-top:1px solid var(--line)}
+.ueber figcaption{color:var(--muted);font-size:.85rem;margin-top:8px}
+.ueber h2{font-size:1.6rem;margin-bottom:10px}
+@media(max-width:640px){.ueber{grid-template-columns:1fr}.ueber figure{max-width:260px}}
+
+nav.top{position:sticky;top:0;z-index:5;background:rgba(251,250,248,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+nav.top .name{font-size:1.25rem;text-decoration:none;white-space:nowrap}
+nav.top .links{display:flex;gap:18px;font-size:.9rem}
+nav.top .links a{text-decoration:none;color:var(--muted)}
+nav.top .links a:hover{color:var(--text)}
+.intro{padding:56px 0 28px}
+.intro h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;letter-spacing:-.01em}
+.intro p{color:var(--muted);margin-top:10px}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 28px}
+.filter button{font:inherit;font-size:.88rem;border:1px solid var(--line);background:#fff;color:var(--text);padding:6px 14px;border-radius:999px;cursor:pointer}
+.filter button.an{background:var(--text);color:#fff;border-color:var(--text)}
+.kacheln{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:28px 22px;padding-bottom:24px}
+.kachel{text-decoration:none;display:block}
+.kachel .bild{aspect-ratio:4/5;overflow:hidden;background:var(--ph);position:relative}
+.play{position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;background:rgba(0,0,0,.45);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;padding-left:4px;z-index:1}
+.raster.nur-video{columns:auto}
+.raster video{display:block;width:100%;max-width:900px;height:auto;background:#000;margin-bottom:16px}
+.kachel img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.kachel:hover img{transform:scale(1.035)}
+.kachel h3{font-size:1.25rem;margin-top:12px}
+.kachel p{color:var(--muted);font-size:.85rem}
+.serie-kopf{padding:40px 0 24px}
+.zurueck{font-size:.9rem;color:var(--muted);text-decoration:none}
+.zurueck:hover{color:var(--text)}
+.serie-kopf h1{font-size:clamp(2rem,5vw,3rem);margin-top:18px;line-height:1.1}
+.serie-kopf .untertitel{margin-top:6px}
+.serie-kopf dl{margin-top:16px}
+.raster{columns:3 260px;column-gap:16px;padding-bottom:16px}
+.raster button{display:block;width:100%;border:0;padding:0;margin:0 0 16px;background:none;cursor:zoom-in;break-inside:avoid}
+.nachbar{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding:24px 0;font-size:.95rem}
+.nachbar a{text-decoration:none}
+.nachbar small{display:block;color:var(--muted);font-size:.8rem}
+.lb{position:fixed;inset:0;background:rgba(18,18,18,.96);z-index:20;display:none;align-items:center;justify-content:center}
+.lb.offen{display:flex}
+.lb img{max-width:92vw;max-height:84vh;width:auto;height:auto;object-fit:contain;background:none}
+.lb button{position:absolute;background:none;border:0;color:#fff;font-size:2rem;cursor:pointer;padding:16px;opacity:.75}
+.lb button:hover{opacity:1}
+.lb .zu{top:6px;right:10px}
+.lb .vor{left:4px;top:50%;transform:translateY(-50%)}
+.lb .nach{right:4px;top:50%;transform:translateY(-50%)}
+.lb .zaehler{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#bbb;font-size:.85rem}
+@media(max-width:640px){nav.top .links a.v{display:none}.lb .vor,.lb .nach{display:none}}
+</style>
+</head>
+<body>
+  <nav class="top"><div class="wrap">
+    <a class="name serif" href="#">Susi Nöstlinger</a>
+    <div class="links">
+      <a href="#">Arbeiten</a>
+      <a href="#ueber">Über</a>
+      <a class="v" href="einfach.html">Einfache Ansicht</a>
+    </div>
+  </div></nav>
+
+  <main class="wrap" id="app"></main>
+
+  <div class="wrap" id="ueber-box">
+    <section class="ueber" id="ueber">
+      <figure>
+        <img src="medien/portrait-01.jpg" alt="Selbstporträt von Susi Nöstlinger im Spiegel" loading="lazy" width="1200" height="1600">
+        <figcaption>Selbstporträt</figcaption>
+      </figure>
+      <div>
+        <h2 class="serif">Über Susi Nöstlinger</h2>
+        <!-- Optional: kurzer Text zur Künstlerin -->
+      </div>
+    </section>
+  </div>
+
+  <footer class="wrap">© 2026 Susi Nöstlinger · <a class="version" href="einfach.html">Einfache Ansicht zum Durchscrollen</a></footer>
+
+  <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Bildansicht">
+    <img id="lb-img" alt="">
+    <button class="zu" id="lb-zu" aria-label="Schließen">×</button>
+    <button class="vor" id="lb-vor" aria-label="Vorheriges Bild">‹</button>
+    <button class="nach" id="lb-nach" aria-label="Nächstes Bild">›</button>
+    <div class="zaehler" id="lb-z"></div>
+  </div>
+
+<script>
+const SERIEN = [{"id": "fetzenschaedel", "titel": "Fetzenschädel", "untertitel": "frei nach Arcimboldo", "kategorie": "Fotografie", "info": [["Serie", "Porträts, 7 Arbeiten"], ["Art", "Fotografie"], ["Format", "beliebig"], ["Von", "Susi Nöstlinger"]], "bilder": [{"src": "medien/fetzenschaedel-01.jpg", "thumb": "medien/thumbs/fetzenschaedel-01.jpg", "w": 1200, "h": 1600}, {"src": "medien/fetzenschaedel-02.jpg", "thumb": "medien/thumbs/fetzenschaedel-02.jpg", "w": 1159, "h": 1546}, {"src": "medien/fetzenschaedel-03.jpg", "thumb": "medien/thumbs/fetzenschaedel-03.jpg", "w": 1200, "h": 1600}, {"src": "medien/fetzenschaedel-04.jpg", "thumb": "medien/thumbs/fetzenschaedel-04.jpg", "w": 1200, "h": 1600}, {"src": "medien/fetzenschaedel-05.jpg", "thumb": "medien/thumbs/fetzenschaedel-05.jpg", "w": 1200, "h": 1600}, {"src": "medien/fetzenschaedel-06.jpg", "thumb": "medien/thumbs/fetzenschaedel-06.jpg", "w": 1200, "h": 1600}, {"src": "medien/fetzenschaedel-07.jpg", "thumb": "medien/thumbs/fetzenschaedel-07.jpg", "w": 1200, "h": 1600}]}, {"id": "segelschiffe", "titel": "Segelschiffe", "untertitel": "", "kategorie": "Malerei", "info": [["Serie", "3 Arbeiten"], ["Art", "Malerei"], ["Von", "Susi Nöstlinger"]], "bilder": [{"src": "medien/segelschiffe-01.jpg", "thumb": "medien/thumbs/segelschiffe-01.jpg", "w": 1600, "h": 1200}, {"src": "medien/segelschiffe-02.jpg", "thumb": "medien/thumbs/segelschiffe-02.jpg", "w": 1600, "h": 1200}, {"src": "medien/segelschiffe-03.jpg", "thumb": "medien/thumbs/segelschiffe-03.jpg", "w": 1600, "h": 1200}]}, {"id": "spiegelungen-stadt", "titel": "Spiegelungen – Stadt", "untertitel": "", "kategorie": "Fotografie", "info": [["Serie", "4 Arbeiten"], ["Art", "Fotografie"], ["Von", "Susi Nöstlinger"]], "bilder": [{"src": "medien/spiegelung-stadt-01.jpg", "thumb": "medien/thumbs/spiegelung-stadt-01.jpg", "w": 1600, "h": 1200}, {"src": "medien/spiegelung-stadt-02.jpg", "thumb": "medien/thumbs/spiegelung-stadt-02.jpg", "w": 1600, "h": 1200}, {"src": "medien/spiegelung-stadt-03.jpg", "thumb": "medien/thumbs/spiegelung-stadt-03.jpg", "w": 1600, "h": 1200}, {"src": "medien/spiegelung-stadt-04.jpg", "thumb": "medien/thumbs/spiegelung-stadt-04.jpg", "w": 1200, "h": 1600}]}, {"id": "spiegelungen-park", "titel": "Spiegelungen – Park", "untertitel": "", "kategorie": "Fotografie", "info": [["Serie", "3 Arbeiten"], ["Art", "Fotografie"], ["Von", "Susi Nöstlinger"]], "bilder": [{"src": "medien/spiegelung-park-01.jpg", "thumb": "medien/thumbs/spiegelung-park-01.jpg", "w": 1600, "h": 1200}, {"src": "medien/spiegelung-park-02.jpg", "thumb": "medien/thumbs/spiegelung-park-02.jpg", "w": 1600, "h": 1200}, {"src": "medien/spiegelung-park-03.jpg", "thumb": "medien/thumbs/spiegelung-park-03.jpg", "w": 1282, "h": 962}]}, {"id": "puppen", "titel": "Puppen", "untertitel": "", "kategorie": "Fotografie", "info": [["Serie", "2 Arbeiten"], ["Art", "Fotografie"], ["Von", "Susi Nöstlinger"]], "bilder": [{"src": "medien/puppen-01.jpg", "thumb": "medien/thumbs/puppen-01.jpg", "w": 1200, "h": 1600}, {"src": "medien/puppen-02.jpg", "thumb": "medien/thumbs/puppen-02.jpg", "w": 1200, "h": 1600}]}, {"id": "video", "titel": "Schatten", "untertitel": "", "kategorie": "Video", "info": [["Art", "Video"], ["Dauer", "0:12 min"], ["Von", "Susi Nöstlinger"]], "bilder": [{"src": "medien/video-01.mp4", "poster": "medien/video-01-poster.jpg", "thumb": "medien/thumbs/video-01-poster.jpg", "w": 640, "h": 428, "video": true}]}];
+const app = document.getElementById('app');
+const ueberBox = document.getElementById('ueber-box');
+let filter = 'Alle';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+
+function uebersicht() {
+  const kats = ['Alle', ...new Set(SERIEN.map(s => s.kategorie))];
+  const liste = SERIEN.filter(s => filter === 'Alle' || s.kategorie === filter);
+  app.innerHTML = `
+    <section class="intro">
+      <h1 class="serif">Arbeiten</h1>
+      <p>Fotografie · Malerei · Video</p>
+    </section>
+    <div class="filter">${kats.map(k => `<button class="${k===filter?'an':''}" data-k="${esc(k)}">${esc(k)}</button>`).join('')}</div>
+    <div class="kacheln">${liste.map(s => `
+      <a class="kachel" href="#${s.id}">
+        <div class="bild">${s.bilder[0].video?'<span class="play">▶</span>':''}<img src="${s.bilder[0].thumb}" alt="${esc(s.titel)}" loading="lazy"></div>
+        <h3 class="serif">${esc(s.titel)}</h3>
+        <p>${esc(s.kategorie)} · ${s.bilder.length} ${s.bilder.length===1?'Arbeit':'Arbeiten'}</p>
+      </a>`).join('')}</div>`;
+  app.querySelectorAll('.filter button').forEach(b => b.onclick = () => { filter = b.dataset.k; uebersicht(); });
+  ueberBox.style.display = '';
+}
+
+function serie(s) {
+  const i = SERIEN.indexOf(s);
+  const prev = SERIEN[(i - 1 + SERIEN.length) % SERIEN.length], next = SERIEN[(i + 1) % SERIEN.length];
+  app.innerHTML = `
+    <section class="serie-kopf">
+      <a class="zurueck" href="#">← Alle Arbeiten</a>
+      <h1 class="serif">${esc(s.titel)}</h1>
+      ${s.untertitel ? `<p class="untertitel serif">${esc(s.untertitel)}</p>` : ''}
+      <dl>${s.info.map(([k,v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+    </section>
+    <div class="raster ${s.bilder.some(b=>b.video)?'nur-video':''}">${s.bilder.map((b, n) => b.video ? `
+      <video src="${b.src}" poster="${b.poster}" controls playsinline preload="metadata"></video>` : `
+      <button data-n="${n}" aria-label="${esc(s.titel)} ${n+1} groß ansehen">
+        <img src="${b.thumb}" alt="${esc(s.titel)} ${n+1}" loading="lazy" width="${b.w}" height="${b.h}">
+      </button>`).join('')}</div>
+    <div class="nachbar">
+      <a href="#${prev.id}"><small>← Vorherige Serie</small>${esc(prev.titel)}</a>
+      <a href="#${next.id}" style="text-align:right"><small>Nächste Serie →</small>${esc(next.titel)}</a>
+    </div>`;
+  app.querySelectorAll('.raster button').forEach(b => b.onclick = () => oeffne(s, +b.dataset.n));
+  ueberBox.style.display = 'none';
+}
+
+function route() {
+  const h = location.hash.slice(1);
+  const s = SERIEN.find(x => x.id === h);
+  if (s) { serie(s); window.scrollTo(0, 0); }
+  else {
+    uebersicht();
+    if (h === 'ueber') document.getElementById('ueber').scrollIntoView();
+    else window.scrollTo(0, 0);
+  }
+}
+window.addEventListener('hashchange', route);
+route();
+
+// ---- Lightbox ----
+const lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'), lbZ = document.getElementById('lb-z');
+let akt = null, pos = 0;
+function zeige() {
+  const b = akt.bilder[pos];
+  lbImg.src = b.src; lbImg.alt = akt.titel + ' ' + (pos + 1);
+  lbZ.textContent = akt.titel + ' · ' + (pos + 1) + ' / ' + akt.bilder.length;
+}
+function oeffne(s, n) { akt = s; pos = n; zeige(); lb.classList.add('offen'); document.body.style.overflow = 'hidden'; }
+function zu() { lb.classList.remove('offen'); document.body.style.overflow = ''; }
+function schritt(d) { pos = (pos + d + akt.bilder.length) % akt.bilder.length; zeige(); }
+document.getElementById('lb-zu').onclick = zu;
+document.getElementById('lb-vor').onclick = e => { e.stopPropagation(); schritt(-1); };
+document.getElementById('lb-nach').onclick = e => { e.stopPropagation(); schritt(1); };
+lb.onclick = e => { if (e.target === lb) zu(); };
+lbImg.onclick = () => schritt(1);
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('offen')) return;
+  if (e.key === 'Escape') zu(); if (e.key === 'ArrowRight') schritt(1); if (e.key === 'ArrowLeft') schritt(-1);
+});
+let tx = null;
+lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, {passive: true});
+lb.addEventListener('touchend', e => {
+  if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; tx = null;
+  if (Math.abs(dx) > 40) schritt(dx < 0 ? 1 : -1);
+});
+</script>
+</body>
+</html>
